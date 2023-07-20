@@ -2,14 +2,18 @@
     margin: 0%;
     padding: 0%;
 }
+ 
+
 
 /* inicia header */
 .parte1 div{
     display:inline-block;
+ 
 }
 header{
     background-color: rgb(10, 103, 199, 100%);
     padding: 30px;
+
 }
 .RedesSociales ul li a{
     color: white;
@@ -93,7 +97,7 @@ header{
 #espacio{
     position: absolute;
     left: 990px;
-    top: 155px;
+    top: 135px;
 
      
     border-width: 5px;
@@ -119,23 +123,24 @@ header{
 #prom{
    position: absolute;
    left: 650px;
-   top: 140px; 
+   top: 130px; 
    font-size: 25px;
    margin-top: 13px;
 }
 #cat{
     position: absolute;
     left: 350px;
-    top: 140px; 
+    top: 130px; 
     font-size: 25px;
     margin-top: 13px;
  }
  #ini{
     position: absolute;
     left: 150px;
-    top: 140px; 
+    top: 130px; 
     font-size: 25px;
     margin-top: 13px;
+    
  }
 
  /* termina header */
@@ -151,6 +156,7 @@ header{
 
  footer{
     background-color: rgb(217, 217, 217);
+
 }
  .info {
     display: grid;

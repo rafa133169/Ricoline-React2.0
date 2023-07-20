@@ -55,7 +55,7 @@ function Header() {
       </ul>
     </div>
     <div className="Nombre">
-      <h1 id="nom">Ricoline</h1>
+      <h1 id="nom" className="text-center">Ricoline</h1>
     </div>
     <div className="loginCarr">
       <ul>
@@ -90,7 +90,7 @@ function Header() {
     <div className="buscar">
       <form className="d-flex" role="search">
         <i className="bi bi-search" id="lupa"></i>
-        <input type="search" placeholder="" id="espacio" />
+        <input type="search" placeholder="" id="espacio"  />
       </form>
     </div>
   </div>

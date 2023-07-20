@@ -10,7 +10,7 @@ function Footer ()  {
   return (
     
     
-<footer>
+<footer className="">
   <div className="footer1">
     <form className="row g-3">
       <div className="footer_correo">
@@ -32,7 +32,8 @@ function Footer ()  {
     background: '#FBE200',
     borderRadius: '40.50px',
     borderStyle: 'solid',
-    borderColor: '#FBE200'
+    borderColor: '#FBE200',
+    
   }}
 >
   <h3 style={{ fontSize: '28px',color:'black' }}>Registrarse</h3>

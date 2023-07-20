@@ -3,6 +3,8 @@ import Footer from '../Components/Footer'
 import Header from '../components/Header'
 
 import axios from 'axios';
+import Menu_producto from '../part-1/Menu_producto';
+import PerfilUsuario from '../part-1/PerfilUsuario';
 
 
 
@@ -27,8 +29,9 @@ function Home() {
     return (
         <>  
         <Header></Header>
-        <div className=' md:w-1/3 lg:w-2/ 1   container'>
-                <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae consectetur illo ipsam repellendus voluptate error natus, earum est rerum eligendi repudiandae reprehenderit soluta totam aperiam unde possimus esse nulla perspiciatis!</h1>
+        <div>
+                {/*<Menu_producto></Menu_producto>*/} 
+                {/*<PerfilUsuario></PerfilUsuario>*/}
             </div>
             <Footer></Footer>
 
