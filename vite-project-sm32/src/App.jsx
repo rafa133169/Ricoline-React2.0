@@ -9,6 +9,7 @@ import Home from './Pages/Home'
 import Formulario from './Pages/Formulario'
 import IndexUser from './Pages-Dash/IndexUser'
 import AddUser from './Pages-Dash/AddUser'
+import Menu_producto from './part-1/Menu_producto'
 
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
       path: "/AddUser",
       element : <AddUser/>
 
+    },
+    {
+      path: "/Menu_producto",
+      element : <Menu_producto />
     }
 
 
