@@ -1,8 +1,12 @@
 import React from 'react'
+import '../css/estilos.css';
+import Header from '../components/Header';
+import Footer from '../Components/Footer';
 
 function PerfilUsuario() {
   return (
     <div>
+        <Header></Header>
         <div>
             <h1 className="Cuenta text-3xl p-7">Mi cuenta</h1>
 
@@ -35,8 +39,9 @@ function PerfilUsuario() {
     
 
         </div>
-    
+    <Footer></Footer>
 </div>
+
   )
 }
 

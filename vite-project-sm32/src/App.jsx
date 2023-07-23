@@ -14,6 +14,7 @@ import categorias from './Pages/categorias'
 import Categorias from './Pages/categorias'
 import Cards from './Components/Cards'
 import Index from './Pages/Index'
+import PerfilUsuario from './Pages/PerfilUsuario'
 
 function App() {
 
@@ -38,6 +39,10 @@ function App() {
     {
       path: "/Menu_producto",
       element : <Menu_producto />
+    },
+    {
+      path: "/PerfilUsuario",
+      element : <PerfilUsuario />
     },
     {
       path: "/Categorias",
