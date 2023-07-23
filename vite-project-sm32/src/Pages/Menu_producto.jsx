@@ -78,13 +78,13 @@ function Menu_producto() {
             <img style={{
         width: '100px'
       }}
-      src={producto9}
+   
        />
 
             <img  style={{
       width: '100px'
       }}
-      src={producto10}
+    
        />
            
         

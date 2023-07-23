@@ -1,13 +1,13 @@
 import React from 'react'
 import '../css/categorias.css'
-import prod1 from '../img-cat/prod1.jpeg'
+import prod15 from '../img-cat/prod15.webp'
 
 export default function Cards({Imagen, Nombre, Precio}){
     return(
         <div>
       <div className='card' id='sdf'>
         <div className='grid grid-cols-3 gap-4'>
-      <img src={prod1} class="card-img-top" alt="..."  />
+      <img src={prod15} class="card-img-top" alt="..."  />
       <div class="card-body">
       <h3 style={{fontSize:'15px', position:''}}>{Nombre}</h3>
       <div class="cat-pr-ca">

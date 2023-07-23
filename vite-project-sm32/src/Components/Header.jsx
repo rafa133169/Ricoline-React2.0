@@ -83,7 +83,7 @@ function Header() {
     <div className="menu">
       <ul>
         <li>
-          <Link to="/Index" id="ini">| Inicio |</Link>
+          <Link to="/" id="ini">| Inicio |</Link>
         </li>
         <li>
           <Link to="/Categorias" id="cat">| Categorias |</Link>

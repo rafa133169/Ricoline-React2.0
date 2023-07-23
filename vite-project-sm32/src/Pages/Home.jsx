@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Footer from '../Components/Footer'
 import Header from '../components/Header'
-
+import Index from '../Pages/Index';
 import axios from 'axios';
-import Menu_producto from '../part-1/Menu_producto';
-import PerfilUsuario from '../part-1/PerfilUsuario';
+
 
 
 
@@ -29,10 +28,9 @@ function Home() {
     return (
         <>  
         <Header></Header>
-        <div>
-                {/*<Menu_producto></Menu_producto>*/} 
-                {/*<PerfilUsuario></PerfilUsuario>*/}
-            </div>
+       
+              <Index></Index>
+         
             <Footer></Footer>
 
         </>
