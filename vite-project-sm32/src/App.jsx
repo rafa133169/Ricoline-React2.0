@@ -13,6 +13,7 @@ import Menu_producto from './part-1/Menu_producto'
 import categorias from './Pages/categorias'
 import Categorias from './Pages/categorias'
 import Cards from './Components/Cards'
+import Index from './Pages/Index'
 
 function App() {
 
@@ -45,6 +46,10 @@ function App() {
     {
       path: "/Cards",
       element: <Cards/>
+    },
+    {
+      path: "/Index",
+      element: <Index/>
     }
 
 
