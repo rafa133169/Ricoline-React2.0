@@ -10,8 +10,9 @@ import Formulario from './Pages/Formulario'
 import IndexUser from './Pages-Dash/IndexUser'
 import AddUser from './Pages-Dash/AddUser'
 import Menu_producto from './part-1/Menu_producto'
-import 'boxicons'
-
+import categorias from './Pages/categorias'
+import Categorias from './Pages/categorias'
+import Cards from './Components/Cards'
 
 function App() {
 
@@ -36,7 +37,16 @@ function App() {
     {
       path: "/Menu_producto",
       element : <Menu_producto />
+    },
+    {
+      path: "/Categorias",
+      element: <Categorias />
+    },
+    {
+      path: "/Cards",
+      element: <Cards/>
     }
+
 
 
 
