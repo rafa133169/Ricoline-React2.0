@@ -12,7 +12,7 @@ import AddUser from './Pages-Dash/AddUser'
 import Menu_producto from './Pages/Menu_producto'
 import categorias from './Pages/categorias'
 import Categorias from './Pages/categorias'
-import Cards from './Components/Cards'
+
 import Index from './Pages/Index'
 import PerfilUsuario from './Pages/PerfilUsuario'
 import Promociones from './Pages/Promociones'
@@ -48,10 +48,6 @@ function App() {
     {
       path: "/Categorias",
       element: <Categorias />
-    },
-    {
-      path: "/Cards",
-      element: <Cards/>
     },
     {
       path: "/Index",

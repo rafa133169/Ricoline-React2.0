@@ -1,13 +1,20 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../Components/Footer';
-import Cards from '../Components/Cards';
+
 import '../css/categorias.css';
 import '../css/estilos.css'
 import '../css/inicio.css';
 import paquete5 from '../imagen/paquete5.png'
 import paquete6 from '../imagen/paquete6.png'
 import paquete7 from '../imagen/paquete7.png'
+import prod1 from '../img-cat/prod1.jpeg'
+import prod2 from '../img-cat/prod2.jpg'
+import prod3 from '../img-cat/prod3.webp'
+import prod4 from '../img-cat/prod4.webp'
+import prod5 from '../img-cat/prod5.webp'
+import prod6 from '../img-cat/prod6.webp'
+import prod7 from '../img-cat/prod7.jpg'
 
 function Promociones() {
   return (
@@ -52,12 +59,42 @@ function Promociones() {
       <div className="cat-prod" >
       <div className='flex-tol'>
       <div className='grid grid-cols-2 gap-5' style={{marginLeft:'100px'}}>
-      <Cards Nombre={"Bubulubu 24pz"} Precio={'$137.99'} ></Cards>
-      <Cards Nombre={"Bubulubu 24pz"} Precio={'$137.99'}></Cards>
+      <div className="card">
+  <img src={prod1}/>
+  <div className="card-body">
+    <h5 className="card-title">Bubulubu 24pz</h5>
+    <p className="card-text">$137.99</p>
+    <a href="#" className="btn btn-primary">Detalles</a>
+  </div>
+</div>
+     
+<div className="card">
+  <img src={prod2}/>
+  <div className="card-body">
+    <h5 className="card-title">Bubulubu 24pz</h5>
+    <p className="card-text">$137.99</p>
+    <a href="#" className="btn btn-primary">Detalles</a>
+  </div>
+</div>
       </div>
       <div className='grid grid-cols-2 gap-5' style={{marginLeft:'100px'}}>
-      <Cards Nombre={"Bubulubu 24pz"} Precio={'$137.99'} ></Cards>
-      <Cards Nombre={"Bubulubu 24pz"} Precio={'$137.99'}></Cards>
+      <div className="card">
+  <img src={prod3}/>
+  <div className="card-body">
+    <h5 className="card-title">Bubulubu 24pz</h5>
+    <p className="card-text">$137.99</p>
+    <a href="#" className="btn btn-primary">Detalles</a>
+  </div>
+</div>
+
+<div className="card">
+  <img src={prod4}/>
+  <div className="card-body">
+    <h5 className="card-title">Bubulubu 24pz</h5>
+    <p className="card-text">$137.99</p>
+    <a href="#" className="btn btn-primary">Detalles</a>
+  </div>
+</div>
       </div>
       </div>
       </div>
