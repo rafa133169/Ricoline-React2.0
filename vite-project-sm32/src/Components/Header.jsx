@@ -89,7 +89,7 @@ function Header() {
           <Link to="/Categorias" id="cat">| Categorias |</Link>
         </li>
         <li>
-          <a href="promociones.html" id="prom">| Promociones |</a>
+          <Link to="/Promociones" id="prom">| Promociones |</Link>
         </li>
       </ul>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/inicio.css';
 import '../css/estilos.css'
+import { Outlet, Link, Route, Routes } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../Components/Footer';
 import Cards from '../Components/Cards';
@@ -46,16 +47,16 @@ function Index() {
         <h1 className="ini-sub">Categorias</h1>
         <div className=' flex-tol'>
         <div className='grid grid-cols-3 gap-4'>
-        <div className="ini-choco" id="chocolate">
-					<h1 className="ini-text">Chocolotes</h1>
+        <div className="ini-choco" id="chocolate" >
+					<Link to="/Categorias" className="ini-text">Chocolotes</Link>
 					<img src={cat1} className="img-cat" />
 				</div>
         <div className="ini-choco" id="gomita">
-					<h1 className="ini-text">Gomitas</h1>
+					<Link to="/Categorias" className="ini-text">Gomitas</Link>
 					<img src={cat2} class="img-cat" />
 				</div>
         <div className="ini-choco" id="bombon">
-					<h1 className="ini-text">Bombones</h1>
+					<Link to="/Categorias" className="ini-text">Bombones</Link>
 					<img src={cat3} class="img-cat" />
 				</div>
         </div>
@@ -63,15 +64,15 @@ function Index() {
         <br />
         <div className='grid grid-cols-3 gap-4'>
         <div class="ini-choco" id="acido">
-					<h1 class="ini-text">Acidos</h1>
+					<Link to='/Categorias' class="ini-text">Acidos</Link>
 					<img src={cat4} class="img-cat" />
 				</div>
         <div className="ini-choco" id="palet">
-					<h1 className="ini-text">Paletas</h1>
+					<Link to='/Categorias' className="ini-text">Paletas</Link>
 					<img src={cat5}  id="paletas" />
 				</div>
         <div className="ini-choco" id="caram">
-					<h1 className="ini-text">Caramelos</h1>
+					<Link to='/Categorias' className="ini-text">Caramelos</Link>
 					<img src={cat6} class="img-cat" />
 				</div>
         </div>
@@ -79,11 +80,11 @@ function Index() {
         <br />
         <div className='grid grid-cols-2 gap-10'>
         <div className="ini-choco" id="barra">
-					<h1 className="ini-text">Barritas</h1>
+					<Link to='/Categorias' className="ini-text">Barritas</Link>
 					<img src={cat7} class="img-cat" />
 				</div>
         <div class="ini-choco" id="surti">
-					<h1 class="ini-text">Surtido</h1>
+					<Link to="/Categorias" class="ini-text">Surtido</Link>
 					<img src={cat8} class="img-cat" />
 				</div>
         </div>

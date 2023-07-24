@@ -17,6 +17,8 @@ import Cards12 from '../Components/Cards12';
 import Cards13 from '../Components/Cards13';
 import Cards14 from '../Components/Cards14';
 import Cards15 from '../Components/Cards15';
+import { Outlet, Link, Route, Routes } from 'react-router-dom';
+
 import '../css/categorias.css';
 function Categorias() {
   return (

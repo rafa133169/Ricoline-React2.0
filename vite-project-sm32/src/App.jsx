@@ -15,6 +15,7 @@ import Categorias from './Pages/categorias'
 import Cards from './Components/Cards'
 import Index from './Pages/Index'
 import PerfilUsuario from './Pages/PerfilUsuario'
+import Promociones from './Pages/Promociones'
 
 function App() {
 
@@ -55,6 +56,10 @@ function App() {
     {
       path: "/Index",
       element: <Index/>
+    },
+    {
+      path: "/Promociones",
+      element: <Promociones />
     }
 
 
