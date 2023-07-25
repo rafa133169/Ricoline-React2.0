@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Outlet, Link, Route, Routes } from 'react-router-dom';
 import Home from "../Pages/Home";
 import Formulario from "../Pages/Formulario";
+import IndexProductos from '../Pages-Dash/IndexProductos'
 
 function Header() {
 
@@ -73,7 +74,7 @@ function Header() {
 </svg>
           </Link>
           <Link to="" id="lll">
-          <h1 >login</h1> 
+          <h1 >login</h1> <Link to="/IndexProductos">Dashboard</Link>
           </Link>
         </li>
         

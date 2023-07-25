@@ -4,7 +4,7 @@ import "./loginRegistrojs";
 
 
 
-function LoginRegistro  ()  {
+function Login  ()  {
   return (
     <div className="contenedor_todo">
       <div className="caja_trasera">
@@ -40,4 +40,4 @@ function LoginRegistro  ()  {
   );
 };
 
-export default LoginRegistro;
+export default Login;

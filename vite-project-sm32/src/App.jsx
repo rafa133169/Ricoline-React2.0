@@ -7,15 +7,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Home from './Pages/Home'
 import Formulario from './Pages/Formulario'
-import IndexUser from './Pages-Dash/IndexUser'
-import AddUser from './Pages-Dash/AddUser'
+import IndexProductos from './Pages-Dash/IndexProductos'
+import AddProducto from './Pages-Dash/AddProducto'
 import Menu_producto from './Pages/Menu_producto'
 import categorias from './Pages/categorias'
 import Categorias from './Pages/categorias'
+import IndexCategorias from './Pages-categories/IndexCategorias'
+import UpdProductos from './Pages-Dash/UpdProductos'
+import AddCategoria from './Pages-categories/AddCategoria'
+import UpdCategorias from './Pages-categories/UpdCategorias'
 
 import Index from './Pages/Index'
 import PerfilUsuario from './Pages/PerfilUsuario'
 import Promociones from './Pages/Promociones'
+
 
 function App() {
 
@@ -29,12 +34,12 @@ function App() {
       element: <Formulario/>
     },
     {
-      path: "/IndexUser",
-      element: <IndexUser/>
+      path: "/IndexProductos",
+      element: <IndexProductos/>
     },
     {
-      path: "/AddUser",
-      element : <AddUser/>
+      path: "/AddProducto",
+      element : <AddProducto/>
 
     },
     {
@@ -56,6 +61,23 @@ function App() {
     {
       path: "/Promociones",
       element: <Promociones />
+    },
+    {
+      path: "/IndexCategorias",
+      element: <IndexCategorias />
+    },
+    {
+      path: "/EditProducto/:id",
+      element : <UpdProductos/>
+
+    },
+    {
+      path: "/AddCategoria",
+      element: <AddCategoria/>
+    },
+    {
+      path: "EditCategoria/:id",
+      element: <UpdCategorias />
     }
 
 

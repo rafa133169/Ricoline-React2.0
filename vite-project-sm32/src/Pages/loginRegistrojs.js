@@ -1,4 +1,4 @@
-document.getElementById("btn iniciar-sesion").addEventListener("click",iniciarSesion);
+ document.getElementById("btn iniciar-sesion").addEventListener("click",iniciarSesion);
 document.getElementById("btn registrarse").addEventListener("click",registro);
 window.addEventListener("resize",anchoPagina);
 

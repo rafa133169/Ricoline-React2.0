@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Header from '../components/Header';
 import Footer from '../Components/Footer';
@@ -25,6 +25,21 @@ import { Outlet, Link, Route, Routes } from 'react-router-dom';
 
 import '../css/categorias.css';
 function Categorias() {
+  const [Productos, setProductos] = useState([]);
+
+    useEffect(() => {
+        // Lógica para obtener los usuarios de la base de datos al cargar el componente
+        fetchProductos();
+    }, []);
+
+    const fetchProductos = async () => {
+
+        const response = await axios.get('http://localhost:3001/productos'); // Ruta de la API para obtener catálogos
+        setProductos(response.data)
+
+        console.log(response.data);
+
+    }
   return (
     <div>
       <Header></Header>
@@ -111,7 +126,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -120,7 +135,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Casita Mix 10pz</h5>
     <p className="card-text">$153.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
            
@@ -129,7 +144,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Paleta payaso 24pz</h5>
     <p className="card-text">$405.89</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -141,7 +156,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Duvalín 18pz</h5>
     <p className="card-text">$33.00</p>
-    <a href="/Menu_producto" className="btn btn-primary">Detalles</a>
+    <a href="/Menu_producto" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -151,7 +166,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Duvalín 18pz</h5>
     <p className="card-text">$33.00</p>
-    <a href="/Menu_producto" className="btn btn-primary">Detalles</a>
+    <a href="/Menu_producto" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -160,7 +175,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Duvalín 18pz</h5>
     <p className="card-text">$33.00</p>
-    <a href="/Menu_producto" className="btn btn-primary">Detalles</a>
+    <a href="/Menu_producto" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -174,7 +189,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -183,7 +198,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -192,7 +207,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
            
@@ -203,7 +218,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -212,7 +227,7 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
@@ -221,39 +236,29 @@ function Categorias() {
   <div className="card-body">
     <h5 className="card-title">Bubulubu 24pz</h5>
     <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
+    <a href="#" className="btn btn-primary">Comprar</a>
   </div>
 </div>
 
 
             </div>
             <div className='grid grid-cols-3 gap-4'>
-            <div className="card">
-  <img src={prod13}/>
-  <div className="card-body">
-    <h5 className="card-title">Bubulubu 24pz</h5>
-    <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
-  </div>
-</div>
+            {Productos.map((productos) => (
+                          
+                                
 
-<div className="card">
-  <img src={prod14}/>
-  <div className="card-body">
-    <h5 className="card-title">Bubulubu 24pz</h5>
-    <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
-  </div>
-</div>
-
-<div className="card">
-  <img src={prod15}/>
-  <div className="card-body">
-    <h5 className="card-title">Bubulubu 24pz</h5>
-    <p className="card-text">$137.99</p>
-    <a href="#" className="btn btn-primary">Detalles</a>
-  </div>
-</div>
+                                   
+                          <div className="card">
+                            <img src={productos.imagen}/>
+                            <div className="card-body">
+                              <h5 className="card-title">{productos.nombre}</h5>
+                              <p className="card-text">$ {productos.precio}</p>
+                              
+                              <a href="#" className="btn btn-primary">Comprar</a>
+                            </div>                       
+                                                              </div>
+                           
+                                                  ))}
    </div>
             <div className='cat-num'>
                 <nav aria-label="Page navigation example" style={{marginLeft: '250px', marginTop: '80px', marginBottom: '50px'}}>
